@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        전송버튼이 눌렸을때 할 일을 지정
         sendBtn.setOnClickListener {
 
 //            Ctrl + / 로 이 줄을 주석으로.
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("메인화면", "전송버튼 눌림")
 
+        }
+
+//        로그 버튼이 눌리면 할일을 별도로 지정
+        logBtn.setOnClickListener {
+            Log.d("메인화면", "로그버튼 눌림")
         }
 
     }
